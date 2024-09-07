@@ -1,0 +1,205 @@
+*{
+    margin: 0;
+    padding: 0;
+    background-origin: padding-box;
+}
+body{
+    
+    font-family: 'Times New Roman', Times, serif;
+    width: 100% ;
+    height: 100%;
+    font-size: 19px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+.navigation{
+    display: flex;
+    flex-direction: column;
+    position: sticky;
+    top: 0;
+    
+   
+    ul{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        list-style-type: none;
+        flex-wrap: wrap;
+        padding: 10px 0;
+        gap: 20px;
+      
+            li>input{
+                width: 30rem;
+                height: 1.5em;
+            }
+            .search{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+        &>li>button{
+            border: none;
+           margin-top: 0;
+           background: none;
+
+            img{
+                width: 20px;
+                height: 20px;   
+            }
+        }
+       
+    }
+}
+.nav1{
+    font-size: 16px;
+    background: linear-gradient( 90deg,rgb(46, 9, 9) 0%, rgb(112, 18, 18) 50%, rgb(211, 15, 15) 100%);
+    position: sticky;
+}
+.nav2 {
+    font-size: 13px;
+    background-color: black;
+    position: sticky;
+    top:0;
+    width: 100%;
+    padding: 10px;
+    z-index: 25;
+     
+}
+
+main{
+    background-image: url(Image/background.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    z-index: -1;
+    display: flex;
+    flex-direction: column;
+    
+    .contener-1{
+        background-color: rgba(0, 0, 0, 0.525);
+        position: relative;
+        top:5rem;
+        left: 2rem;
+        display: flex;
+        flex-direction: column;
+        justify-self: start;
+        margin: 100px 0 100px 50px;
+        width: 50%;
+        height: auto;
+        padding: 30px;
+        font-size: 16px;
+        p{
+            font-size: 17px;
+        }
+        z-index: 1;
+    }
+    .contener-2{
+        background-color: aliceblue;
+        position: relative;
+        top:9rem;
+        width: 100%;
+        height: auto;
+        padding: 20px 0;
+        color: #414040;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        
+        
+        .trand-box{
+            background-color: rgb(173, 171, 171);
+            
+            width: 90%;
+            padding-bottom: 20px;
+            display: flex;
+            flex-direction: column;
+            h1{
+                margin: 20px 0 0 10px;
+            }
+            .item-container{
+                display: flex;
+                color:white;
+                width: 80vw;
+                height: 10%;
+                
+                .item{
+                    border: 2px solid rgb(42, 40, 40);
+                    background-color: rgb(120, 130, 130);
+                    display: flex;
+                    flex-direction: column;
+                    width: 8%;
+                    height: 6%;
+                    margin:  0 10px;
+                    p{
+                        font-size: 15px;
+                        padding: 2%;
+                        margin: auto;
+                    }                    
+                    & >img{
+                        width: 100%;
+                        height: 80%;
+                    }
+                }
+            }
+            
+        }
+    }
+    
+}
+
+footer{
+    position: relative;
+    top:20vh;
+    background:linear-gradient( 90deg,rgb(48, 48, 48) 0%, rgb(16, 16, 16) 50%, rgb(9, 9, 9) 100%) ;
+    width: 85.7vw;
+    height: 67vh;
+    padding: 101.5px;
+    
+    section{
+        background:linear-gradient( 90deg,rgb(32, 32, 32) 0%, rgb(88, 20, 20) 50%, rgb(178, 20, 20) 100%) ;
+        box-shadow: 0 0 8px rgba(245, 244, 244, 0.456); 
+        width: 80vw;
+        height: 70vh;
+        display: flex;
+        justify-content: space-between;
+        
+       
+       margin: auto;
+       display: flex;
+        .foot{
+            color: rgb(249, 249, 249);
+            width: 35%;
+            height: auto;
+            padding: 30px 0 0 30px;
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+            margin: 20px 0 100px 30px;
+            h1{
+                font-size: 25px;
+            }
+            p{
+                font-size: 15px;
+            }
+
+        }
+        img{
+            width: 250px;
+            height: 250px;
+            margin: 20px;
+            border-radius: 50%;
+            box-shadow: 8px 8px 15px 8px rgba(245, 244, 244, 0.877);
+            
+        }
+        img:hover{
+
+            width: 400px;
+            height: 400px;
+            
+    }
+}
+}
